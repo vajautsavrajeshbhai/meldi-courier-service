@@ -1,5 +1,3 @@
-/* style.css */
-
 :root {
   --primary: #e63946;
   --primary-dark: #c92535;
@@ -40,7 +38,7 @@ a {
 }
 
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header {
   background: rgba(255,255,255,0.97);
@@ -75,24 +73,14 @@ nav a {
   color: #374151;
   font-size: 13px;
   font-weight: 700;
-  transition: 0.25s;
 }
 
 nav a:hover {
   color: var(--primary);
 }
 
-.nav-whatsapp {
-  background: var(--green);
-  color: white;
-  padding: 10px 17px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 700;
-}
 
-
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
   background:
@@ -126,7 +114,6 @@ nav a:hover {
   border-radius: 50px;
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
@@ -163,24 +150,10 @@ nav a:hover {
   border-radius: 9px;
   font-weight: 800;
   font-size: 14px;
-  transition: 0.25s;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
 }
 
 .primary {
   background: var(--primary);
-  color: white;
-}
-
-.primary:hover {
-  background: var(--primary-dark);
-}
-
-.btn.whatsapp {
-  background: var(--green);
   color: white;
 }
 
@@ -264,7 +237,7 @@ nav a:hover {
 }
 
 
-/* ================= GENERAL SECTIONS ================= */
+/* GENERAL */
 
 .section {
   padding: 90px 0;
@@ -294,11 +267,7 @@ nav a:hover {
 }
 
 
-/* ================= COURIER INFO ================= */
-
-.courier-info {
-  background: white;
-}
+/* COURIER */
 
 .courier-explain-grid {
   display: grid;
@@ -308,12 +277,7 @@ nav a:hover {
 }
 
 .courier-visual {
-  background: linear-gradient(
-    135deg,
-    #fff1f2,
-    #fff8f8
-  );
-
+  background: linear-gradient(135deg,#fff1f2,#fff8f8);
   border-radius: 25px;
   min-height: 420px;
   display: flex;
@@ -332,7 +296,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   font-size: 95px;
-  box-shadow: 0 15px 40px rgba(230,57,70,0.10);
 }
 
 .route-line {
@@ -348,26 +311,6 @@ nav a:hover {
   border-top: 3px dashed var(--primary);
 }
 
-.route-line span {
-  font-size: 22px;
-}
-
-.courier-visual > p {
-  color: #6b7280;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.courier-explanation h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.courier-explanation > p {
-  color: var(--text);
-  margin-bottom: 25px;
-}
-
 .things-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -381,7 +324,6 @@ nav a:hover {
   padding: 15px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: white;
 }
 
 .thing > span {
@@ -393,7 +335,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  flex-shrink: 0;
 }
 
 .thing strong {
@@ -411,22 +352,10 @@ nav a:hover {
   padding: 15px;
   border-left: 4px solid var(--primary);
   background: #fff5f5;
-  border-radius: 5px;
-}
-
-.important-note strong {
-  font-size: 13px;
-  color: var(--primary);
-}
-
-.important-note p {
-  color: #6b7280;
-  font-size: 12px;
-  margin-top: 3px;
 }
 
 
-/* ================= HOW COURIER WORKS ================= */
+/* PROCESS */
 
 .how-courier-works {
   background: #f8fafc;
@@ -434,7 +363,7 @@ nav a:hover {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
@@ -444,20 +373,18 @@ nav a:hover {
   border-radius: 18px;
   padding: 30px 22px;
   text-align: center;
-  position: relative;
 }
 
 .process-number {
   color: var(--primary);
   font-size: 12px;
   font-weight: 900;
-  margin-bottom: 12px;
 }
 
 .process-icon {
   width: 65px;
   height: 65px;
-  margin: auto auto 15px;
+  margin: 15px auto;
   background: #fff0f1;
   border-radius: 50%;
   display: flex;
@@ -466,21 +393,12 @@ nav a:hover {
   font-size: 28px;
 }
 
-.process-card h3 {
-  margin-bottom: 7px;
-}
 
-.process-card p {
-  color: var(--text);
-  font-size: 13px;
-}
-
-
-/* ================= SERVICES ================= */
+/* SERVICES */
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
@@ -489,12 +407,6 @@ nav a:hover {
   border-radius: 18px;
   padding: 30px 25px;
   background: white;
-  transition: 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 18px 50px rgba(17,24,39,0.08);
 }
 
 .service-icon {
@@ -509,18 +421,8 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.service-card h3 {
-  margin-bottom: 8px;
-  font-size: 18px;
-}
 
-.service-card p {
-  color: var(--text);
-  font-size: 14px;
-}
-
-
-/* ================= WHY US ================= */
+/* WHY */
 
 .why-section {
   background: #111827;
@@ -543,31 +445,28 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   font-size: 130px;
-  border: 1px solid #374151;
 }
 
 .why-content > span {
   color: #ff737d;
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: 2px;
 }
 
 .why-content h2 {
   font-size: 44px;
-  line-height: 1.15;
   margin: 10px 0 20px;
 }
 
 .why-content > p {
   color: #cbd5e1;
-  margin-bottom: 30px;
 }
 
 .why-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 30px;
 }
 
 .why-item {
@@ -583,20 +482,10 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-}
-
-.why-item h3 {
-  font-size: 16px;
-}
-
-.why-item p {
-  color: #9ca3af;
-  font-size: 13px;
 }
 
 
-/* ================= RATES ================= */
+/* RATES */
 
 .rates-section {
   background: #f8fafc;
@@ -604,7 +493,7 @@ nav a:hover {
 
 .rate-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 25px;
   max-width: 950px;
   margin: auto;
@@ -633,24 +522,17 @@ nav a:hover {
   padding: 5px 15px;
   border-radius: 30px;
   font-size: 10px;
-  font-weight: 800;
-}
-
-.rate-card h3 {
-  margin-bottom: 15px;
 }
 
 .rate-price {
   color: var(--primary);
   font-size: 35px;
   font-weight: 900;
-  margin-bottom: 5px;
 }
 
 .rate-card p {
   color: #6b7280;
   font-size: 13px;
-  min-height: 40px;
 }
 
 .rate-card a {
@@ -660,12 +542,10 @@ nav a:hover {
   padding: 12px;
   border-radius: 8px;
   margin-top: 20px;
-  font-size: 13px;
-  font-weight: 700;
 }
 
 
-/* ================= BOOKING ================= */
+/* BOOKING */
 
 .booking-section {
   padding: 90px 0;
@@ -719,13 +599,37 @@ input:focus,
 textarea:focus,
 select:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(230,57,70,0.08);
 }
 
 textarea {
   min-height: 100px;
   resize: vertical;
 }
+
+
+/* NEW WHATSAPP NUMBER DESIGN */
+
+.whatsapp-number-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.whatsapp-number-box label {
+  color: #15803d;
+}
+
+.whatsapp-number-box input {
+  border-color: #86efac;
+}
+
+.whatsapp-number-box small {
+  color: #6b7280;
+  margin-top: 6px;
+  font-size: 11px;
+}
+
 
 .submit-button {
   width: 100%;
@@ -738,20 +642,14 @@ textarea {
   font-weight: 800;
   cursor: pointer;
   margin-top: 25px;
-  transition: 0.25s;
-}
-
-.submit-button:hover {
-  background: #12843d;
-  transform: translateY(-2px);
 }
 
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
@@ -774,22 +672,8 @@ textarea {
   font-size: 25px;
 }
 
-.contact-card h3 {
-  margin-bottom: 8px;
-}
 
-.contact-card p,
-.contact-card a {
-  color: #6b7280;
-  font-size: 14px;
-}
-
-.contact-card a:hover {
-  color: var(--primary);
-}
-
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer {
   background: #111827;
@@ -801,11 +685,6 @@ footer {
 .footer-logo {
   font-size: 22px;
   font-weight: 800;
-  margin-bottom: 5px;
-}
-
-footer > .container > p {
-  color: #9ca3af;
 }
 
 .footer-links {
@@ -835,32 +714,7 @@ footer > .container > p {
 }
 
 
-/* ================= FLOATING WHATSAPP ================= */
-
-.floating-whatsapp {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: #16a34a;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 29px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  z-index: 999;
-  transition: 0.25s;
-}
-
-.floating-whatsapp:hover {
-  transform: scale(1.08);
-}
-
-
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media (max-width: 1000px) {
 
@@ -878,32 +732,17 @@ footer > .container > p {
     text-align: center;
   }
 
-  .hero-text > p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .hero-buttons {
-    justify-content: center;
-  }
-
-  .quick-info {
     justify-content: center;
   }
 
   .service-grid,
   .process-grid,
   .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .courier-explanation {
-    max-width: 800px;
-    margin: auto;
+    grid-template-columns: repeat(2,1fr);
   }
 
 }
-
 
 @media (max-width: 650px) {
 
@@ -911,36 +750,16 @@ footer > .container > p {
     width: 92%;
   }
 
-  .nav {
-    min-height: 65px;
-  }
-
-  .logo {
-    font-size: 17px;
-  }
-
-  .nav-whatsapp {
-    display: none;
-  }
-
   .hero {
     padding: 60px 0;
   }
 
-  .hero-grid {
-    gap: 45px;
-  }
-
   .hero h1 {
     font-size: 45px;
-    letter-spacing: -1px;
-  }
-
-  .hero-text > p {
-    font-size: 16px;
   }
 
   .quick-info {
+    justify-content: center;
     gap: 20px;
   }
 
@@ -971,30 +790,9 @@ footer > .container > p {
     padding: 25px;
   }
 
-  .courier-visual {
-    min-height: 330px;
-  }
-
-  .big-package {
-    width: 130px;
-    height: 130px;
-    font-size: 75px;
-  }
-
-  .why-content h2 {
-    font-size: 35px;
-  }
-
   .why-image {
     height: 250px;
     font-size: 90px;
-  }
-
-  .floating-whatsapp {
-    width: 55px;
-    height: 55px;
-    right: 18px;
-    bottom: 18px;
   }
 
 }
